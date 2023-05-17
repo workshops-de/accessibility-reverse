@@ -1,0 +1,46 @@
+{
+  "name": "accessibility",
+  "version": "1.0.0",
+  "description": "This repository contains a demo project for a book store, along with a series of exercises that aim to teach web developers how to make their websites more accessible to people with disabilities. The exercises are designed for developers with basic knowledge of JavaScript, HTML, and CSS. SCSS knowledge is also helpful but not required.",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "npx cypress open",
+    "build": "sass --watch ./scss:./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/workshops-de/accessibility.git"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "js",
+    "api",
+    "frontend",
+    "browser"
+  ],
+  "author": "Maria Korneeva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/workshops-de/accessibility/issues"
+  },
+  "homepage": "https://github.com/workshops-de/accessibility#readme",
+  "dependencies": {
+    "bookmonkey-api": "^3.1.2"
+  },
+  "devDependencies": {
+    "babel-jest": "^29.6.1",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "axe-core": "^4.7.2",
+    "canvas": "^2.11.2",
+    "cypress": "^12.17.0",
+    "cypress-axe": "^1.4.0",
+    "jest": "^29.6.1",
+    "jsdom": "^22.1.0",
+    "prettier": "^2.8.7",
+    "sass": "^1.60.0"
+  }
+}

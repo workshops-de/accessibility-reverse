@@ -1,0 +1,63 @@
+@import "./global";
+
+.mission_text {
+  margin-bottom: $s-spacing;
+  font-size: $xs-font;
+  background-color: $secondary-color;
+  border-radius: 4px;
+  color: $primary-color-invert;
+  padding: $xs-spacing;
+}
+
+.mission_video iframe {
+  aspect-ratio: 16 / 9; /* Nit supported in IE*/
+  width: 100%;
+  margin-bottom: $s-spacing;
+}
+
+#dailyVisitors {
+  border: $secondary-color solid 0.3rem;
+  background-color: $primary-color-invert;
+  margin-bottom: $s-spacing;
+  width: 100%;
+  border-radius: 4px;
+}
+
+table {
+  border: $secondary-color solid 0.3rem;
+  background-color: $primary-color-invert;
+  border-radius: 4px;
+  border-collapse: separate;
+  font-weight: bold;
+  color: $secondary-color;
+  width: 100%;
+
+  tr:hover {
+    background-color: $background-light !important;
+  }
+
+  tr:nth-child(even) {
+    background-color: transparentize($secondary-color, 0.9);
+  }
+
+  th {
+    text-align: left;
+    padding-left: 0.5rem;
+  }
+}
+
+/* tablet breakpoint */
+@media (min-width: $tablet) {
+  .content--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mission_text,
+  canvas {
+    margin-right: $s-spacing;
+  }
+
+  canvas {
+    max-width: 30rem;
+  }
+}
