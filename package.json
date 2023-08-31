@@ -4,7 +4,6 @@
   "description": "This repository contains a demo project for a book store, along with a series of exercises that aim to teach web developers how to make their websites more accessible to people with disabilities. The exercises are designed for developers with basic knowledge of JavaScript, HTML, and CSS. SCSS knowledge is also helpful but not required.",
   "main": "index.js",
   "scripts": {
-    "cypress": "npx cypress open",
     "build": "sass --watch ./scss:./css"
   },
   "repository": {
@@ -29,9 +28,6 @@
     "bookmonkey-api": "^3.1.2"
   },
   "devDependencies": {
-    "axe-core": "^4.7.2",
-    "cypress": "^12.17.0",
-    "cypress-axe": "^1.4.0",
     "prettier": "^2.8.7",
     "sass": "^1.60.0"
   }
