@@ -89,7 +89,7 @@ nav ul {
 .navigation-item:first-child {
   padding-left: 0;
 }
-.navigation-item[aria-current="page"] {
+.navigation-item[aria-current=page] {
   text-decoration: underline;
 }
 

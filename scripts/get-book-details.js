@@ -25,19 +25,3 @@ xhr.onload = function () {
   }
 };
 xhr.send();
-
-// Star rating
-const radioButtons = document.querySelectorAll(
-  ".star-rating input[type=radio]"
-);
-console.log(radioButtons);
-
-radioButtons.forEach((radioButton) => {
-  radioButton.addEventListener("click", handleRating);
-});
-
-function handleRating() {
-  console.log(
-    document.querySelector(".star-rating :checked ~ label span").textContent
-  );
-}

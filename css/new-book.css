@@ -89,7 +89,7 @@ nav ul {
 .navigation-item:first-child {
   padding-left: 0;
 }
-.navigation-item[aria-current="page"] {
+.navigation-item[aria-current=page] {
   text-decoration: underline;
 }
 
@@ -321,7 +321,7 @@ form #result {
   margin-top: 1rem;
 }
 
-input[type="submit"] {
+input[type=submit] {
   background-color: white;
   border: solid 3px black;
   border-radius: 4px;
@@ -331,10 +331,10 @@ input[type="submit"] {
   font-size: 1.4rem;
   margin-top: 1.5rem;
 }
-input[type="submit"]:hover {
+input[type=submit]:hover {
   background-color: #ffcb9a;
 }
-input[type="submit"]:disabled {
+input[type=submit]:disabled {
   background-color: white;
   border: solid 3px #ffcb9a;
 }
