@@ -296,15 +296,15 @@ form #result {
   text-align: center;
 }
 
-.form-field {
+form div {
   display: block;
   margin-top: 1rem;
 }
-.form-field > span {
+form div > span {
   display: block;
   margin-bottom: 0.5rem;
 }
-.form-field > input {
+form div > input {
   padding: 12px 20px 12px 6px;
   border: 1px solid black;
   border-radius: 4px;
@@ -337,10 +337,6 @@ input[type=submit]:hover {
 input[type=submit]:disabled {
   background-color: white;
   border: solid 3px #ffcb9a;
-}
-
-input.validated:not(:focus):not(:placeholder-shown):invalid {
-  border-color: red !important;
 }
 
 /*# sourceMappingURL=new-book.css.map */

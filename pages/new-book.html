@@ -30,22 +30,11 @@
       <!--Accessible hamburger-->
       <!--https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/examples/menu-button-links/#ex_label-->
       <nav class="mobile-menu">
-        <button
-          type="button"
-          id="menubutton"
-          class="hamburger"
-          aria-haspopup="true"
-          aria-controls="menuContent"
-        >
+        <button type="button" id="menubutton" class="hamburger" aria-haspopup="true" aria-controls="menuContent">
           ☰
         </button>
 
-        <ul
-          id="menuContent"
-          class="hamburgerContent"
-          role="menu"
-          aria-labelledby="menubutton"
-        >
+        <ul id="menuContent" class="hamburgerContent" role="menu" aria-labelledby="menubutton">
           <li role="none" class="menu-item">
             <a role="menuitem" href="../pages/new-book.html">New book</a>
           </li>
@@ -53,35 +42,29 @@
             <a role="menuitem" href="../index.html">Books</a>
           </li>
           <li role="none" class="menu-item">
-            <a role="menuitem" href="../pages/about.html"
-              >About Accessible Reads</a
-            >
+            <a role="menuitem" href="../pages/about.html">About Accessible Reads</a>
           </li>
         </ul>
       </nav>
 
       <!--Accessible desktop menu-->
       <nav class="desktop-navigation">
-        <ul  aria-label="Accessible Reads Menu">
-          <li  class="navigation-item" aria-current="page">
+        <ul aria-label="Accessible Reads Menu">
+          <li class="navigation-item" aria-current="page">
             <a href="../pages/new-book.html">New book</a>
           </li>
-          <li  class="navigation-item">
+          <li class="navigation-item">
             <a href="../index.html">Books</a>
           </li>
-          <li  class="navigation-item">
-            <a href="../pages/about.html"
-              >About Accessible Reads</a
-            >
+          <li class="navigation-item">
+            <a href="../pages/about.html">About Accessible Reads</a>
           </li>
         </ul>
       </nav>
 
       <div class="logo">
-        <img  src="../assets/a11y.png" />
-        <span class="logo__text"
-          ><span class="secondary-color">Accessible</span> Reads</span
-        >
+        <img src="../assets/a11y.png" />
+        <span class="logo__text"><span class="secondary-color">Accessible</span> Reads</span>
       </div>
     </div>
   </header>
@@ -90,40 +73,25 @@
     <h1>Add a new book to your collection</h1>
 
     <form id="new-book">
-      <label class="form-field">
-        <span>ISBN (required)</span>
+      <div><span>ISBN</span>
+        <input id="isbn" required />
+      </div>
 
-        <input id="isbn" required oninvalid="this.setCustomValidity('ISBN cannot be blank')"
-          oninput="this.setCustomValidity('')" />
+      <div> <span>Title</span>
+        <input id="title" />
+      </div>
 
-      </label>
+      <div> <span>Author</span>
+        <input id="author" required />
+      </div>
 
-      <label class="form-field">
-        <span>Title (required)</span>
-
-        <input id="title" required oninvalid="this.setCustomValidity('Title cannot be blank')"
-          oninput="this.setCustomValidity('')" />
-
-      </label>
-
-      <label class="form-field">
-        <span>Author (required)</span>
-
-        <input id="author" required oninvalid="this.setCustomValidity('Author cannot be blank')"
-          oninput="this.setCustomValidity('')" />
-      </label>
-
-      <label class="form-field">
-        <span>Cover-URL</span>
-
+      <div> <span>Cover-URL</span>
         <input id="cover" />
-      </label>
+      </div>
 
-      <label class="form-field">
-        <span>Abstract</span>
-
+      <div> <span>Abstract</span>
         <input id="abstract" />
-      </label>
+      </div>
 
       <div id="result"></div>
 
