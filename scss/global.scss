@@ -97,7 +97,7 @@ nav {
   grid-column: 1;
   align-self: center;
 
-  ul {
+  div {
     list-style-type: none;
     padding-inline-start: 0;
   }
@@ -110,10 +110,6 @@ nav {
   &:first-child {
     padding-left: 0;
   }
-
-  &[aria-current="page"] {
-    text-decoration: underline;
-  }
 }
 
 .navigation-item a {
@@ -121,13 +117,6 @@ nav {
   font-weight: bold;
   color: $primary-color;
   text-decoration: none;
-}
-
-.hamburger {
-  font-size: 3em;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 .logo {
@@ -237,34 +226,16 @@ footer {
   footer .footer__links {
     justify-content: left;
   }
-
-  .hamburgerContent,
-  .hamburger {
-    display: none;
-  }
 }
 
 /* tablet breakpoint */
 @media screen and (max-width: $tablet) {
-  .hamburger {
-    display: block;
-  }
-  .desktop-navigation {
-    display: none;
-  }
   main {
     padding: 10rem $xs-spacing;
   }
 
   footer .footer__links {
     margin-bottom: $xs-spacing;
-  }
-}
-
-@media (min-width: $tablet) {
-  .hamburgerContent,
-  .hamburger {
-    display: none;
   }
 }
 
@@ -286,40 +257,4 @@ footer {
   footer .footer__links {
     justify-content: left;
   }
-}
-
-/* hamburger */
-.hamburgerContent {
-  margin: 0;
-  list-style: none;
-  display: none;
-  position: absolute;
-  border: $xxs-spacing $secondary-color solid;
-  border-radius: 5px;
-  background-color: $primary-color-invert;
-  padding-inline-start: 0;
-  width: max-content;
-}
-
-.menu-item a {
-  text-decoration: none;
-  padding: 1rem;
-  display: block;
-  color: $primary-color;
-  font-size: $xs-font;
-  font-weight: bold;
-  border-radius: 5px;
-  width: max-content;
-
-  a {
-    font-size: $xs-font;
-    font-weight: bold;
-    color: $primary-color;
-    text-decoration: none;
-  }
-}
-
-.menu-item:focus,
-.menu-item:hover {
-  background: $backgrond-light-secondary;
 }

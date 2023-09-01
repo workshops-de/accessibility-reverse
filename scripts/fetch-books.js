@@ -46,9 +46,7 @@ function displayResults(books) {
       const title = `<div class="book__title"><h2>${book.title}</h2></div>`;
       const author = `<p class="book__text book__author">Author: ${book.author}</p>`;
       const abstract = `<p class="book__text book__abstract">${book.abstract}</p>`;
-      const details = `<a class="book__text book__details" href='./pages/book-details.html?isbn=${book.isbn}' class="book__text">Details<span class="visually-hidden">${book.title}</span></a>`;
-
-      return `<article>${title}${author}${abstract}${details}</article>`;
+      const details = `<a class="book__text book__details" href='./pages/book-details.html?isbn=${book.isbn}' class="book__text">Details<span class="visually-hidden">${book.title}</span></a>`; return `<article>${title}${author}${abstract}${details}</article>`;
     })
     .join("");
 

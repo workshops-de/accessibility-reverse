@@ -42,55 +42,20 @@
   <body>
     <header>
       <div class="visible-header">
-        <!--Accessible hamburger-->
-        <!--https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/examples/menu-button-links/#ex_label-->
-        <nav class="mobile-menu">
-          <button
-            type="button"
-            id="menubutton"
-            class="hamburger"
-            aria-haspopup="true"
-            aria-controls="menuContent"
-          >
-            ☰
-          </button>
-
-          <ul
-            id="menuContent"
-            class="hamburgerContent"
-            role="menu"
-            aria-labelledby="menubutton"
-          >
-            <li role="none" class="menu-item">
-              <a role="menuitem" href="../pages/new-book.html">New book</a>
-            </li>
-            <li role="none" class="menu-item">
-              <a role="menuitem" href="../index.html">Books</a>
-            </li>
-            <li role="none" class="menu-item">
-              <a role="menuitem" href="../pages/about.html"
-                >About Accessible Reads</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <!--Accessible desktop menu-->
+  
         <nav class="desktop-navigation">
-          <ul aria-label="Accessible Reads Menu">
+          <div>
             <li class="navigation-item">
               <a href="../pages/new-book.html">New book</a>
             </li>
-            <li class="navigation-item" aria-current="page">
+            <li class="navigation-item">
               <a href="../index.html">Books</a>
             </li>
             <li class="navigation-item">
               <a href="../pages/about.html">About Accessible Reads</a>
             </li>
-          </ul>
-        </nav>
-
-        <div class="logo">
+          </div>
+        </nav>   <div class="logo">
           <img src="../assets/a11y.png" />
           <span class="logo__text"
             ><span class="secondary-color">Accessible</span> Reads</span
@@ -100,9 +65,7 @@
     </header>
 
     <main id="content">
-      <h1>Our books</h1>
-
-      <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search-->
+      <h1>Our books</h1> <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search-->
       <!--https://codepen.io/nedgip/pen/xxZgvjv-->
       <!--Alternative. https://www.scottohara.me/blog/2022/02/05/dynamic-results.html-->
       <form onSubmit="return false;">
@@ -200,9 +163,7 @@
             </svg>
             <p class="visually-hidden">Twitter</p></a
           >
-        </div>
-
-        <p class="footer__right">
+        </div>   <p class="footer__right">
           Created by
           <a href="https://twitter.com/BrowserPerson" target="_blank"
             >@BrowserPerson</a
@@ -211,6 +172,5 @@
       </div>
     </footer>
     <script src="./scripts/fetch-books.js"></script>
-    <script src="../scripts/global.js"></script>
   </body>
 </html>
