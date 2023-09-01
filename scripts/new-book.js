@@ -19,12 +19,6 @@ if (form) {
         elementsWithValidaton.forEach((element) => {
           element.classList.remove("validated");
         });
-        if (resultElement)
-          resultElement.innerHTML = `<p aria-live="polite">You've just successfully saved a new book</p>`;
-      })
-      .catch(() => {
-        if (resultElement)
-          resultElement.innerHTML = `<p aria-live="polite">An error occured. Please try again later</p>`;
       })
       .finally(() => {
         form.addEventListener(
