@@ -244,11 +244,11 @@ article {
   border-style: solid;
   border-radius: 4px;
 }
-article:hover {
+article:hover, article:focus-within {
   border-color: #114446;
   border-width: 0.2rem;
 }
-article:hover .book__title {
+article:hover .book__title, article:focus-within .book__title {
   background-color: #ffcb9a;
   color: black;
 }
