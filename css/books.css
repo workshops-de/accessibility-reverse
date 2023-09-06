@@ -76,10 +76,14 @@ nav div {
   padding-left: 0;
 }
 
+.navigation-item .current-page {
+  color: #b11111;
+}
+
 .navigation-item a {
   font-size: 1.2rem;
   font-weight: bold;
-  color: black;
+  color: #114446;
   text-decoration: none;
 }
 
@@ -244,11 +248,11 @@ article {
   border-style: solid;
   border-radius: 4px;
 }
-article:hover, article:focus-within {
+article:hover {
   border-color: #114446;
   border-width: 0.2rem;
 }
-article:hover .book__title, article:focus-within .book__title {
+article:hover .book__title {
   background-color: #ffcb9a;
   color: black;
 }

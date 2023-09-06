@@ -76,10 +76,14 @@ nav div {
   padding-left: 0;
 }
 
+.navigation-item .current-page {
+  color: #b11111;
+}
+
 .navigation-item a {
   font-size: 1.2rem;
   font-weight: bold;
-  color: black;
+  color: #114446;
   text-decoration: none;
 }
 

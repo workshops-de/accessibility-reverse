@@ -4,6 +4,7 @@ $primary-color-invert: white;
 $secondary-color: #114446;
 $background-light: #ffcb9a;
 $backgrond-light-secondary: #d1e8e2;
+$highlight-color: #b11111;
 
 /* Media breack points */
 $mobile: 480px;
@@ -97,12 +98,18 @@ nav {
   }
 }
 
+.navigation-item .current-page {
+  color:  $highlight-color;
+}
+
 .navigation-item a {
   font-size: $xs-font;
   font-weight: bold;
-  color: $primary-color;
+  color: $secondary-color;
   text-decoration: none;
 }
+
+
 
 .logo {
   display: grid;
