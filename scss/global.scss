@@ -53,7 +53,7 @@ body {
   align-items: stretch;
 }
 
-main {
+.content {
   flex: 1 0 auto;
   padding: 10rem $m-spacing;
   background-image: url(../assets/background-main.svg); //https://app.heazy.studio
@@ -63,7 +63,7 @@ main {
 }
 
 /* Style the header */
-header {
+.header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -79,7 +79,7 @@ header {
   grid-template-columns: 1fr auto;
 }
 
-nav {
+.desktop-navigation {
   grid-column: 1;
   align-self: center;
 
@@ -123,7 +123,7 @@ nav {
   }
 }
 
-header .logo img {
+.header .logo img {
   grid-column: 1;
   max-width: $m-spacing;
   min-width: $s-spacing;
@@ -132,7 +132,7 @@ header .logo img {
   text-align: right;
   padding-right: $xs-spacing;
 }
-header .logo h1 {
+.header .logo h1 {
   grid-column: 2;
   align-self: center;
   justify-self: end;
@@ -153,7 +153,7 @@ header .logo h1 {
 }
 
 /* Style the footer */
-footer {
+.footer {
   color: $primary-color-invert;
   flex-shrink: 0;
   background-color: $secondary-color;
@@ -165,11 +165,11 @@ footer {
   }
 }
 
-footer .footer__imprint {
+.footer .footer__imprint {
   padding: $xs-spacing;
 }
 
-footer .footer__links {
+.footer .footer__links {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 0.8rem;
@@ -180,73 +180,73 @@ footer .footer__links {
   }
 }
 
-footer .footer__imprint .footer__right {
+.footer .footer__imprint .footer__right {
   text-align: right;
   margin: 0;
 }
-footer .footer--icon {
+.footer .footer--icon {
   width: 2rem;
   fill: $primary-color-invert;
 }
 
 @media (forced-colors: active) {
-  footer .footer--icon {
+  .footer .footer--icon {
     fill: $primary-color;
   }
 }
 
-header,
-main,
-footer {
+.header,
+.content,
+.footer {
   flex-shrink: 0;
 }
 
 @media (min-width: $tablet) {
-  footer .footer__imprint {
+  .footer .footer__imprint {
     display: grid;
     grid-template-columns: 1fr auto;
   }
 
-  footer .footer__imprint .footer__links {
+  .footer .footer__imprint .footer__links {
     grid-column: 1;
   }
 
-  footer .footer__imprint .footer__right {
+  .footer .footer__imprint .footer__right {
     grid-column: 2;
   }
 
-  footer .footer__links {
+  .footer .footer__links {
     justify-content: left;
   }
 }
 
 /* tablet breakpoint */
 @media screen and (max-width: $tablet) {
-  main {
+  .content {
     padding: 10rem $xs-spacing;
   }
 
-  footer .footer__links {
+  .footer .footer__links {
     margin-bottom: $xs-spacing;
   }
 }
 
 /* mobile breakpoint */
 @media (max-width: $mobile) {
-  footer .footer__imprint {
+  .footer .footer__imprint {
     display: grid;
     grid-template-columns: 1fr auto;
   }
 
-  footer .footer__imprint .footer__links {
+  .footer .footer__imprint .footer__links {
     grid-column: 1;
   }
 
-  footer .footer__imprint .footer__right {
+  .footer .footer__imprint .footer__right {
     grid-column: 2;
   }
 
-  footer .footer__links {
+  .footer .footer__links {
     justify-content: left;
   }
 }
