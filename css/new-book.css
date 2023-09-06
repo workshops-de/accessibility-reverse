@@ -83,7 +83,7 @@ nav div {
 .navigation-item a {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #114446;
+  color: #488e91;
   text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ header .logo h1 {
 }
 
 .secondary-color {
-  color: #114446;
+  color: #488e91;
 }
 
 .visually-hidden {
@@ -132,7 +132,7 @@ header .logo h1 {
 footer {
   color: white;
   flex-shrink: 0;
-  background-color: #114446;
+  background-color: #488e91;
   font-size: 0.8rem;
   grid-row: 3;
 }
@@ -261,11 +261,11 @@ input[type=submit] {
   margin-top: 1.5rem;
 }
 input[type=submit]:hover {
-  background-color: #ffcb9a;
+  background-color: #d06d6d;
 }
 input[type=submit]:disabled {
   background-color: white;
-  border: solid 3px #ffcb9a;
+  border: solid 3px #d06d6d;
 }
 
 /*# sourceMappingURL=new-book.css.map */

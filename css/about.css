@@ -83,7 +83,7 @@ nav div {
 .navigation-item a {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #114446;
+  color: #488e91;
   text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ header .logo h1 {
 }
 
 .secondary-color {
-  color: #114446;
+  color: #488e91;
 }
 
 .visually-hidden {
@@ -132,7 +132,7 @@ header .logo h1 {
 footer {
   color: white;
   flex-shrink: 0;
-  background-color: #114446;
+  background-color: #488e91;
   font-size: 0.8rem;
   grid-row: 3;
 }
@@ -218,14 +218,14 @@ footer {
 .mission_text {
   margin-bottom: 3rem;
   font-size: 1.2rem;
-  background-color: #114446;
+  background-color: #488e91;
   border-radius: 4px;
   color: white;
   padding: 1.5rem;
 }
 
 #dailyVisitors {
-  border: #114446 solid 0.3rem;
+  border: #488e91 solid 0.3rem;
   background-color: white;
   margin-bottom: 3rem;
   width: 100%;

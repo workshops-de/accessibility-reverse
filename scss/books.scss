@@ -36,12 +36,11 @@ article {
   border-radius: 4px;
 
   &:hover {
-    border-color: $secondary-color;
+    border-color: $background-light;
     border-width: 0.2rem;
 
     .book__title {
       background-color: $background-light;
-      color: $primary-color;
     }
   }
 }
@@ -60,8 +59,9 @@ article {
   background-color: $secondary-color;
   color: $primary-color-invert;
 
-  h2 {
+  p {
     margin: 0;
+    font-size: $s-font;
   }
 }
 

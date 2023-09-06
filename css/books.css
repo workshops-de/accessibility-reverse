@@ -83,7 +83,7 @@ nav div {
 .navigation-item a {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #114446;
+  color: #488e91;
   text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ header .logo h1 {
 }
 
 .secondary-color {
-  color: #114446;
+  color: #488e91;
 }
 
 .visually-hidden {
@@ -132,7 +132,7 @@ header .logo h1 {
 footer {
   color: white;
   flex-shrink: 0;
-  background-color: #114446;
+  background-color: #488e91;
   font-size: 0.8rem;
   grid-row: 3;
 }
@@ -216,7 +216,7 @@ footer {
   }
 }
 input {
-  border-color: #114446;
+  border-color: #488e91;
   border-width: 0.1rem;
   border-style: solid;
   padding: 0.5rem;
@@ -249,12 +249,11 @@ article {
   border-radius: 4px;
 }
 article:hover {
-  border-color: #114446;
+  border-color: #d06d6d;
   border-width: 0.2rem;
 }
 article:hover .book__title {
-  background-color: #ffcb9a;
-  color: black;
+  background-color: #d06d6d;
 }
 
 .book__text {
@@ -268,11 +267,12 @@ article:hover .book__title {
   border-color: black;
   border-width: 0.1rem;
   border-bottom-style: solid;
-  background-color: #114446;
+  background-color: #488e91;
   color: white;
 }
-.book__title h2 {
+.book__title p {
   margin: 0;
+  font-size: 1.4rem;
 }
 
 .book__author {
@@ -287,7 +287,7 @@ article:hover .book__title {
 .book__details {
   display: block;
   height: 2.5rem;
-  color: #114446;
+  color: #488e91;
 }
 
 /*# sourceMappingURL=books.css.map */
