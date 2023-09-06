@@ -82,10 +82,12 @@ body {
 .desktop-navigation {
   grid-column: 1;
   align-self: center;
+  display: inline-block;
 
-  div {
+.desktop-navigation__links {
     list-style-type: none;
     padding-inline-start: 0;
+    display: inline-block;
   }
 }
 
